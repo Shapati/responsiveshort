@@ -52,24 +52,9 @@ getlink.addEventListener('submit',e=>{
     console.log(data)
   
     const shortt = data.result;
-    const shortterr = data.error
-    console.log(shortterr[2])
-    if(shortterr.error===false){
-      result.innerHTML=`
-      <div class="mainlink">
-       <p> ${shortterr.error}</p>
-      </div>
-      <div class="shortlink">
-       
-      </div>
-     
     
-      `
-    }
-
    
-    else{
-      
+  
       result.innerHTML=`
       <div class="mainlink">
        <p> ${shortt.original_link}</p>
@@ -81,7 +66,7 @@ getlink.addEventListener('submit',e=>{
      
     
       `
-    }
+    
 
     
   // console.log(shortt.short_link)
@@ -102,6 +87,12 @@ getlink.addEventListener('submit',e=>{
   
 
 })
+
+
+
+
+
+
 
 
 
